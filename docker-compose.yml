@@ -1,25 +1,25 @@
 version: '3.8'
 services:
   movies:
-    image: rahamshaik007/paymoviess:latest
+    image: puchalasurya/yummovies
     ports:
       - "81:80"
     deploy:
       replicas: 3
-  train:
-    image: rahamshaik007/paytrainn:latest
+  games:
+    image: puchalasurya/yumgames
     ports:
       - "82:80"
     deploy:
       replicas: 3
-  dth:
-    image: rahamshaik007/paydthh:latest
+  music:
+    image: puchalasurya/yummusic
     ports:
       - "83:80"
     deploy:
       replicas: 3
   recharge:
-    image: rahamshaik007/payrechargee:latest
+    image: puchalasurya/yumrecharge
     ports:
       - "84:80"
     deploy:
